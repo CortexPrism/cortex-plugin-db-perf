@@ -1,0 +1,30 @@
+{
+  "name": "cortex-plugin-db-perf",
+  "version": "1.0.0",
+  "description": "Database Performance Advisor — PostgreSQL/MySQL/MongoDB performance audit with index and config recommendations",
+  "kind": "esm",
+  "entryPoint": "mod.ts",
+  "runtime": "deno",
+  "author": "CortexPrism",
+  "license": "MIT",
+  "repository": "https://github.com/CortexPrism/cortex-plugin-db-perf",
+  "homepage": "https://cortexprism.io/marketplace/plugins/db-perf",
+  "capabilities": ["tools", "network:fetch"],
+  "tools": [
+    { "name": "dbperf_audit", "description": "Run comprehensive performance audit", "params": [] },
+    {
+      "name": "dbperf_slow_queries",
+      "description": "Identify and analyze slow queries",
+      "params": []
+    },
+    {
+      "name": "dbperf_index_recommendations",
+      "description": "Get missing index recommendations",
+      "params": []
+    },
+    { "name": "dbperf_config_review", "description": "Review database configuration", "params": [] }
+  ],
+  "dependencies": {},
+  "peerDependencies": { "cortex": ">=1.0.0" },
+  "aiDisclosure": { "tools": ["Kilo (DeepSeek) — batch scaffold"], "humanReview": true }
+}
